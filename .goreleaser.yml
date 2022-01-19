@@ -38,10 +38,10 @@ dockers:
       - docker
     dockerfile: Dockerfile.release
     image_templates:
-      - "ghcr.io/Lustyn/casket:latest"
-      - "ghcr.io/Lustyn/casket:{{ .Tag }}"
-      - "ghcr.io/Lustyn/casket:v{{ .Major }}"
-      - "ghcr.io/Lustyn/casket:v{{ .Major }}.{{ .Minor }}"
+      - "ghcr.io/lustyn/casket:latest"
+      - "ghcr.io/lustyn/casket:{{ .Tag }}"
+      - "ghcr.io/lustyn/casket:v{{ .Major }}"
+      - "ghcr.io/lustyn/casket:v{{ .Major }}.{{ .Minor }}"
 
 # Set dist directory to build/ since we have files in dist/
 dist: build
@@ -61,7 +61,7 @@ checksum:
 
 release:
   github:
-    owner: Lustyn
+    owner: lustyn
     name: casket
   ids:
     - casket
